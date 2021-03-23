@@ -14,6 +14,6 @@ assessments/
         student2repo/
         ...
 ```
-You'll want to make sure git and awk work from the commandline before running it. Try running `git -v`  or `awk -v` to test if they're present. Also, perhaps also make sure you're in bash not zsh. (just write `bash` in the terminal).
+You'll want to make sure git, awk and grep work from the commandline before running it (this will certainly be the case on Linux. Not sure if so on macOS). Try running `git -v`, `awk -v`, `grep -v` to test if they're present. Also, perhaps also make sure you're in bash not zsh. (just write `bash` in the terminal).
 
 It's rough and dirty, contains no checking, use at own risk without warranty!
