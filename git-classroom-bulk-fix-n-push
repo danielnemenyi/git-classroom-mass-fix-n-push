@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for D in */;
+for D in */
 do
     echo "~~ Moving onto $D ~~"
     cd $D
