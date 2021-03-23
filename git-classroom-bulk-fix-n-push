@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for D in */;
+do
+    echo "~~ Moving onto $D ~~"
+    cd $D
+    echo -e "*.~*~" >> .gitignore
+    git commit -a -m "Add feedback"
+    git remote set-url origin $(git remote -v | head -n 1 | grep -o 'github\.com.*git' | awk '{print "https://"$1}')
+    git pull
+    git push origin main
+    cd ..
+    echo "~~ Pushed $D ~~"
+done
