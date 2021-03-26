@@ -2,7 +2,7 @@
 
 for D in */
 do
-    echo "~~ Moving onto $D ~~"
+    echo "~~ Starting $D ~~"
     cd $D
     git add -A
     git commit -m "Add feedback"
